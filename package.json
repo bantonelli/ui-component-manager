@@ -1,0 +1,17 @@
+{
+  "name": "component-manager",
+  "version": "1.0.0",
+  "description": "CLI utility for managing UI component development",
+  "main": "component-manager.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Antonelli",
+  "license": "ISC",
+  "devDependencies": {
+    "lodash": "^4.17.4"
+  },
+  "dependencies": {
+    "vorpal": "^1.11.4"
+  }
+}
