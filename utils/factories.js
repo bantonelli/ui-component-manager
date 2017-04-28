@@ -37,6 +37,7 @@ function createOrganism(name, type) {
         "name": name,
         "type": type,
         "complete": false,
+        "variations": [],
         "modifiers": [],
         "states": [],
         "breakpoints": [],        
@@ -52,6 +53,11 @@ function createOrganism(name, type) {
             "codeBaseStyles": false,
             "testDesktop": false,
             "functional": false
+        },
+        "variationDevelopment": {
+            "planVariations": false,
+            "codeVariationStyles": false,
+            "variationsTested": false,
         },
         "modifierDevelopment": {
             "planModifiers": false,

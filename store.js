@@ -330,8 +330,14 @@ var fetchComponents = () => {
     // Load existing Components from pe-components file 
     try {
         return JSON.parse(fs.readFileSync(path.join(__dirname, "components.json")));
-    } catch (error) {
-        return undefined;
+    } catch (error) {        
+        // This writes the givin text to the file specified.
+        try {
+            fs.appendFileSync(__dirname + '/components.json', '[]', 'utf8');
+            return JSON.parse(fs.readFileSync(path.join(__dirname, "components.json")));
+        } catch (error) {
+            return undefined;
+        }        
     }    
 };
 
