@@ -40,11 +40,11 @@ module.exports = function (vorpal) {
     .command('add modifier <componentName> <modifierName>')
     .validate(function (args) {
         let componentNameValidationResult = utils.validateName(args.componentName);
-        let subclassNameValidationResult = utils.validateName(args.modifierName);    
+        // let subclassNameValidationResult = utils.validateName(args.modifierName);    
         if (componentNameValidationResult) {
             return componentNameValidationResult;
-        } else if (subclassNameValidationResult) {
-            return subclassNameValidationResult;
+        // } else if (subclassNameValidationResult) {
+        //     return subclassNameValidationResult;
         } else {
             return true;
         } 
