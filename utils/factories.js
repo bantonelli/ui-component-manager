@@ -4,7 +4,8 @@
 function createAtomOrMolecule(name, type) {          
     return {
         "name": name,
-        "type": type, 
+        "type": type,
+        "needJS": false, 
         "variations": [],
         "modifiers": [],
         "complete": false,
@@ -37,6 +38,7 @@ function createOrganism(name, type) {
     return {
         "name": name,
         "type": type,
+        "needJS": false,
         "complete": false,
         "variations": [],
         "modifiers": [],
