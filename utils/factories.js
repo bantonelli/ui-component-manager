@@ -15,6 +15,7 @@ function createAtomOrMolecule(name, type) {
             "createPattern": false,
             "createMarkdown": false,
             "codeBaseStyles": false,
+            "codeNeededJS": false,
             "testDesktop": false,
             "testMobile": false,
             "functional": false                
@@ -51,6 +52,7 @@ function createOrganism(name, type) {
             "createPattern": false,
             "createMarkdown": false,
             "codeBaseStyles": false,
+            "codeNeededJS": false,
             "testDesktop": false,
             "functional": false
         },
