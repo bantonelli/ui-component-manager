@@ -145,10 +145,12 @@ var updateComponentSubclass = function (store, self, callback, componentName, su
                 message: message2,
                 validate: function (nextAnswer) { 
                     let value = nextAnswer;
-                    let errMessage = "";
+                    let errMessage = null;
                     if (propertyToUpdate === typeIDKey) {
                         // All subclass names should be valid hyphenated-bem 
-                        errMessage = validateName(value); 
+                        if (typeIDKey !== "modifierName") {
+                            errMessage = validateName(value);
+                        }                          
                         if (value !== "true" && value !== "false" && !errMessage) {
                             return true; 
                         } 
